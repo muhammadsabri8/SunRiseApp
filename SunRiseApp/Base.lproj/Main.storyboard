@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16G1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SunRiseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="w" translatesAutoresizingMaskIntoConstraints="NO" id="kDC-CO-9Ya">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter City Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RJK-ga-6vF">
+                                <rect key="frame" x="21" y="100" width="343" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQH-ya-8qR">
+                                <rect key="frame" x="305" y="220" width="60" height="30"/>
+                                <color key="backgroundColor" red="0.13068095025331106" green="0.94894965532976605" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Sun Rise"/>
+                                <connections>
+                                    <action selector="SunRiseBu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2oo-Ah-4q7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nJ1-sx-6IA">
+                                <rect key="frame" x="21" y="422" width="343" height="24"/>
+                                <color key="backgroundColor" red="0.99942404029999998" green="0.97953737419999998" blue="0.97969271120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aQH-ya-8qR" secondAttribute="trailing" constant="10" id="8s6-gU-dx2"/>
+                            <constraint firstAttribute="trailing" secondItem="kDC-CO-9Ya" secondAttribute="trailing" id="HB6-0u-jRc"/>
+                            <constraint firstItem="kDC-CO-9Ya" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Ol5-CV-g5v"/>
+                            <constraint firstItem="RJK-ga-6vF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="Oy5-Eg-MHy"/>
+                            <constraint firstItem="RJK-ga-6vF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="W0u-a2-BZi"/>
+                            <constraint firstItem="nJ1-sx-6IA" firstAttribute="trailing" secondItem="RJK-ga-6vF" secondAttribute="trailing" id="ZrN-Y7-tgO"/>
+                            <constraint firstItem="nJ1-sx-6IA" firstAttribute="top" secondItem="aQH-ya-8qR" secondAttribute="bottom" constant="172" id="bkd-Wb-kE1"/>
+                            <constraint firstItem="nJ1-sx-6IA" firstAttribute="leading" secondItem="RJK-ga-6vF" secondAttribute="leading" id="eEi-Kr-Oq9"/>
+                            <constraint firstItem="kDC-CO-9Ya" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fVf-76-977"/>
+                            <constraint firstItem="RJK-ga-6vF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="5" id="iwN-12-1NA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kDC-CO-9Ya" secondAttribute="bottom" id="tdN-ff-udE"/>
+                            <constraint firstItem="aQH-ya-8qR" firstAttribute="top" secondItem="RJK-ga-6vF" secondAttribute="bottom" constant="90" id="wTS-Aj-UZz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CityTF" destination="RJK-ga-6vF" id="0ax-BJ-yrG"/>
+                        <outlet property="SunRiseLa" destination="nJ1-sx-6IA" id="6EQ-yG-CGC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="w" width="168" height="299"/>
+    </resources>
+</document>
