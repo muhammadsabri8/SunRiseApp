@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  SunRiseApp
-//
+//  Created by Muhammad Sabri Saad
 //  Created by Mac on 9/4/18.
 //  Copyright © 2018 mac. All rights reserved.
 //
